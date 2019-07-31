@@ -117,8 +117,8 @@ Este objeto possui duas funções que são responsáveis por mostrar os jogadore
     jogadores = property(get_jogadores, set_jogadores)   
 ```
 #### Iniciar uma partida
-Neste método recebemos duas jogadas a primeira sendo a jogada efetuada pelo jogador 1 e a outra pelo jogador 2, informamos ao terminal do Linux o os jogadores e as jogadas efetuadas e efetua o comparativo das jogadas informadas.<br>
-Na comparação verificamos se possuimos um empate, caso possitivo ninguem pontuará, caso negativo verificamos os valores sobre a ótica do jogador 1, pois se ele não pontuar, o jogador 2 deve pontuar, já que o empate ja foi verificado.<br>
+Neste método recebemos duas jogadas a primeira sendo a jogada efetuada pelo jogador 1 e a outra pelo jogador 2, informamos ao terminal do Linux os jogadores e as jogadas efetuadas e efetua o comparativo das jogadas informadas.<br>
+Na comparação verificamos se possuimos um empate, caso positivo ninguem pontuará, caso negativo verificamos os valores sobre a ótica do jogador 1, pois se ele não pontuar, o jogador 2 deve pontuar, já que o empate ja foi verificado.<br>
 Após o comparativo, será adicionado um ponto no placar do pontuador e informado quem pontuou.
 
 ```python
@@ -159,7 +159,7 @@ def anunciarVencedor(self):
 Esta classe é a responsável por utilizar a lógica implementada nos módulos anteriores e executar o jogo no terminal Linux 
 
 #### Importando o módulos
-Nesta parte são importado os módulos que foram explicados anteriormentes, para que a classe Jogar possa ter acesso aos recursos que estes módulos fornecem.
+Nesta parte são importado os módulos que foram explicados anteriormente, para que a classe Jogar possa ter acesso aos recursos que estes módulos fornecem.
 
 ```python
 from modulos import Jogador as jgr
@@ -168,7 +168,7 @@ from modulos import Placar as plc
 #### Execução do Programa
 Quando executado o programa primeiramente será questionado o nome para o jogador 1, que será o usuário no terminal, sendo informado é instanciado um objeto que o represente e após será instanciado outro objeto, responsável por representar o computador. <br>
 Posteriormente os jogadores são registrados na lista de jogadores, esta nas classe Placar e temos início a disputa de jokempô.
-A disputa esta configurada para ocorrer partidas até um dos dois jogadores obter 3 pontos no placar.
+A disputa esta configurada para ocorrer partidas até que um dos dois jogadores obter 3 pontos no placar.
 Para cada partida o terminal questionará ao usuário qual jogada ele quer efetuar, deverá ser informado o número correspondente a jogada. Após a escolha do usuario, o computador escolherá a sua jogada de forma aleatória e por fim o placar comparará e informará a pontuação. <br> 
 Quando um dos dois participantes obter o terceiro ponto o jogo será interrompido e será informado o vencedor da disputa.
 
@@ -201,7 +201,7 @@ Jogar()
 ### Instrução de uso
 
 *  Para executar o programa deve-se:
-   1. Abrir o terminar apontando para a pasta onde foi salvo os arquivos
+   1. Abrir o terminal apontando para a pasta onde foi salvo os arquivos
    2. executar no terminal Linux o seguinte comando:   <br> <br>
     
    ```    
